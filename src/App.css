@@ -83,11 +83,11 @@ select {
 }
 
 body {
-  animation: scroll 600s linear infinite;
+  animation: scroll 300s linear infinite;
   /* Photo by <a href="https://unsplash.com/@molior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farouk Mechedal</a> on <a href="https://unsplash.com/s/photos/texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
   background: url(./images/abstractbg4.jpg), #111111;
   color: #eee;
-  min-width: 360px;
+  min-width: 320px;
   width: 100%;
 
   perspective: 1000px;
@@ -114,22 +114,31 @@ body {
   letter-spacing: 0.09rem;
 }
 
-button {
-  display: none;
+.logo-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.main-nav {
-  font-size: 1.6rem;
+.logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 60px;
-  border-bottom: hsl(var(--clr-accent)) solid 2px;
+  margin-top: 2em;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
-.logo-area {
-  display: none;
+.f-name {
+  margin-right: 9rem;
+}
+
+.l-name {
+  background-color: hsl(var(--clr-accent));
+  color: hsl(var(--clr-dark));
+  border-radius: 3px;
+  height: 1.18em;
+  margin-top: -0.8rem;
 }
 
 .pitch-area {
@@ -149,6 +158,7 @@ button {
   margin-bottom: 2em;
   line-height: 1.6rem;
   padding-inline: 2em;
+  letter-spacing: 0.12rem;
 }
 
 .pitch-text * {
@@ -184,11 +194,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block: 3em;
+  margin-top: 12em;
 }
 
 .contact-info {
-  margin-block: 0.7em;
+  margin-block: 0.4em;
   font-size: 1.2rem;
 }
 
@@ -216,30 +226,6 @@ button {
     border: none;
   }
 
-  .main-nav {
-    font-size: 1.3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    height: 80px;
-  }
-
-  .nav-logo {
-    margin-left: 4em;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: 4em;
-  }
-
-  .nav-link {
-    margin-inline: 0.5em;
-    cursor: pointer;
-  }
-
   .pitch-area {
     flex-direction: row;
     height: 100vh;
@@ -251,24 +237,6 @@ button {
     margin-block: 3em;
     padding-bottom: 5em;
     border-bottom: hsl(var(--clr-accent)) solid 2px;
-  }
-
-  .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 4em;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-  }
-
-  .l-name {
-    margin-top: -1.4rem;
-    margin-left: 3em;
-    background-color: hsl(var(--clr-accent));
-    color: hsl(var(--clr-dark));
-    border-radius: 3px;
-    height: 100px;
   }
 
   .pitch-area {

@@ -1,17 +1,28 @@
-import React from "react"
-import placeholder from "../images/aboutme-image-placeholder.png"
+import portfolioImg from "../images/portfolio-img"
+import { LogoDivStyled, ProfileImgStyled } from "./StyledComponents"
 
 export default function Pitch() {
   return (
-    <div className="pitch-area">
-      <img src={placeholder} alt="Silhuette of man" className="profile-img" />
+    <div>
+      <LogoDivStyled className="logo-area">
+        <div className="logo">
+          <h1 className="f-name">Emil</h1>
+          <h2 className="l-name">Endresen</h2>
+        </div>
+        <div>
+          <ProfileImgStyled src={portfolioImg} alt="Emil Endresen" />
+        </div>
+      </LogoDivStyled>
 
       <div className="pitch-text">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium est scelerisque in lectus
-          ut eget.
+          Jeg går for tiden på Kodehode hvor jeg lærer om HTML, CSS, Javascript og React, og jeg er
+          alltid på utkikk etter andre språk og rammeverk jeg kan lære meg.
         </p>
-        <p>Vitae integer dui enim nisl sit ornare. Pretium id in sit amet, nam.</p>
+        <p>
+          Interessen min for data og koding kom fra ung alder da mye av tiden gikk på data og
+          videospill.
+        </p>
         <p>Tincidunt molestie sed ipsum non arcu pellentesque mauris faucibus mauris.</p>
       </div>
     </div>

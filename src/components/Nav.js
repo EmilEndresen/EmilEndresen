@@ -1,10 +1,11 @@
-import { ButtonDivStyled, NavButtonStyled } from "./StyledComponents"
+import { ButtonDivStyled, LinkStyled, NavButtonStyled } from "./StyledComponents"
 
 export default function Nav() {
   return (
     <ButtonDivStyled>
-      <NavButtonStyled>Om meg</NavButtonStyled>
-      <NavButtonStyled>Mine Prosjekter</NavButtonStyled>
+      <NavButtonStyled>&#8962;</NavButtonStyled>
+      <LinkStyled to="/about-me">Om meg</LinkStyled>
+      <LinkStyled to="/my-projects">Mine Prosjekter</LinkStyled>
     </ButtonDivStyled>
   )
 }
