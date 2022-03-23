@@ -1,38 +1,328 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+:root {
+  /* Colors */
+  --clr-dark: 230, 35%, 7%;
+  --clr-white: 0, 0%, 100%;
+  --clr-accent: 231, 77%, 90%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  animation: scroll 600s linear infinite;
+  /* Photo by <a href="https://unsplash.com/@molior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farouk Mechedal</a> on <a href="https://unsplash.com/s/photos/texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background: url(./images/abstractbg4.jpg), #111111;
+  color: #eee;
+  min-width: 360px;
+  width: 100%;
+
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -8000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+body {
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-white));
+  font-family: "Orbitron", sans-serif;
+  min-width: 375px;
+  letter-spacing: 0.09rem;
+}
+
+button {
+  display: none;
+}
+
+.main-nav {
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 60px;
+  border-bottom: hsl(var(--clr-accent)) solid 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-area {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pitch-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: hsl(var(--clr-accent)) solid 2px;
+}
+
+.profile-img {
+  width: 35%;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.pitch-text {
+  margin-bottom: 2em;
+  line-height: 1.6rem;
+  padding-inline: 2em;
+}
+
+.pitch-text * {
+  margin-bottom: 1rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  padding-bottom: 3em;
+  text-align: center;
+  width: 100vw;
+  border-bottom: hsl(var(--clr-accent)) solid 2px;
+}
+
+.projects > h2 {
+  margin-bottom: 2em;
+}
+
+.project-description {
+  display: none;
+}
+
+.project-image {
+  display: flex;
+  max-width: 75%;
+  margin-block: 1em;
+  margin-inline: auto;
+}
+
+.contact-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 3em;
+}
+
+.contact-info {
+  margin-block: 0.7em;
+  font-size: 1.2rem;
+}
+
+.info-icon {
+  margin-right: 0.7em;
+}
+
+.github {
+  text-decoration: none;
+  color: hsl(var(--clr-white));
+}
+
+.github:focus,
+.github:hover {
+  color: darkorange;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 780px) {
+  button {
+    display: block;
+    color: hsl(var(--clr-white));
+    background-color: hsl(var(--clr-dark));
+    border: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-nav {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    height: 80px;
+  }
+
+  .nav-logo {
+    margin-left: 4em;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 4em;
+  }
+
+  .nav-link {
+    margin-inline: 0.5em;
+    cursor: pointer;
+  }
+
+  .pitch-area {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .logo-area {
+    display: block;
+    margin-inline: auto;
+    margin-block: 3em;
+    padding-bottom: 5em;
+    border-bottom: hsl(var(--clr-accent)) solid 2px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4em;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+
+  .l-name {
+    margin-top: -1.4rem;
+    margin-left: 3em;
+    background-color: hsl(var(--clr-accent));
+    color: hsl(var(--clr-dark));
+    border-radius: 3px;
+    height: 100px;
+  }
+
+  .pitch-area {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    width: 80%;
+  }
+
+  .profile-img {
+    max-width: 35%;
+    margin-left: 3em;
+    margin-top: 0;
+    margin-bottom: 2.5em;
+  }
+
+  .pitch-text {
+    width: 50%;
+    margin-right: auto;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 80vw;
+  }
+
+  .projects > h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 2.5rem;
+  }
+
+  /* .projects > h2::after {
+        content: "";
+    } */
+
+  .project {
+    display: flex;
+    margin-block: 4em;
+  }
+
+  .project-description {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-right: 6em;
+  }
+
+  .project-images {
+    display: flex;
+    max-width: 90%;
   }
 }
