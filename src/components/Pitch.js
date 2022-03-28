@@ -1,30 +1,41 @@
-import portfolioImg from "../images/portfolio-img"
-import { LogoDivStyled, ProfileImgStyled } from "./StyledComponents"
+import portfolioImg from "../images/headshot.WebP"
+import {
+  LogoDivStyled,
+  LogoStyled,
+  ProfileImgSmallScreen,
+  ProfileImgDesktop
+} from "./StyledComponents"
 
 export default function Pitch() {
   return (
-    <div>
+    <section>
       <LogoDivStyled className="logo-area">
-        <div className="logo">
+        <LogoStyled>
           <h1 className="f-name">Emil</h1>
           <h2 className="l-name">Endresen</h2>
-        </div>
-        <div>
-          <ProfileImgStyled src={portfolioImg} alt="Emil Endresen" />
-        </div>
+        </LogoStyled>
+
+        <figure>
+          <ProfileImgSmallScreen src={portfolioImg} alt="Emil Endresen" />
+        </figure>
       </LogoDivStyled>
 
-      <div className="pitch-text">
-        <p>
-          Jeg går for tiden på Kodehode hvor jeg lærer om HTML, CSS, Javascript og React, og jeg er
-          alltid på utkikk etter andre språk og rammeverk jeg kan lære meg.
-        </p>
-        <p>
-          Interessen min for data og koding kom fra ung alder da mye av tiden gikk på data og
-          videospill.
-        </p>
-        <p>Tincidunt molestie sed ipsum non arcu pellentesque mauris faucibus mauris.</p>
-      </div>
-    </div>
+      <section className="pitch-area">
+        <figure className="figure-desktop">
+          <ProfileImgDesktop src={portfolioImg} alt="Emil Endresen" />
+        </figure>
+
+        <div className="pitch-text">
+          <p>
+            Jeg går for tiden på Kodehode hvor jeg lærer om HTML, CSS, Javascript og React, og jeg
+            er alltid på utkikk etter andre språk og rammeverk jeg kan lære meg.
+          </p>
+          <p>
+            Interessen min for data og koding kom fra ung alder da mye av tiden gikk på data og
+            videospill.
+          </p>
+        </div>
+      </section>
+    </section>
   )
 }

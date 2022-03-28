@@ -1,5 +1,5 @@
 import React from "react"
-import steakhouse from "../images/steakhouse.png"
+import steakhouse from "../images/steakhouse.WebP"
 
 export default function Projects() {
   return (
