@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/EmilEndresen/static/css/main.4a105907.css",
-    "main.js": "/EmilEndresen/static/js/main.ab6b6a21.js",
+    "main.css": "/EmilEndresen/static/css/main.c2e7d5a0.css",
+    "main.js": "/EmilEndresen/static/js/main.9b7aaed9.js",
     "static/js/787.80cc74ea.chunk.js": "/EmilEndresen/static/js/787.80cc74ea.chunk.js",
-    "static/media/steakhouse.png": "/EmilEndresen/static/media/steakhouse.176e03e76ace353d32f7.png",
+    "static/media/headshot.WebP": "/EmilEndresen/static/media/headshot.496569aea64de3b07376.WebP",
+    "static/media/steakhouse.WebP": "/EmilEndresen/static/media/steakhouse.176e03e76ace353d32f7.WebP",
     "static/media/abstractbg4.jpg": "/EmilEndresen/static/media/abstractbg4.e6c7d913ac711b18762f.jpg",
-    "static/media/aboutme-image-placeholder.png": "/EmilEndresen/static/media/aboutme-image-placeholder.26460c287e76930a446c.png",
     "index.html": "/EmilEndresen/index.html",
-    "main.4a105907.css.map": "/EmilEndresen/static/css/main.4a105907.css.map",
-    "main.ab6b6a21.js.map": "/EmilEndresen/static/js/main.ab6b6a21.js.map",
+    "main.c2e7d5a0.css.map": "/EmilEndresen/static/css/main.c2e7d5a0.css.map",
+    "main.9b7aaed9.js.map": "/EmilEndresen/static/js/main.9b7aaed9.js.map",
     "787.80cc74ea.chunk.js.map": "/EmilEndresen/static/js/787.80cc74ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a105907.css",
-    "static/js/main.ab6b6a21.js"
+    "static/css/main.c2e7d5a0.css",
+    "static/js/main.9b7aaed9.js"
   ]
 }
