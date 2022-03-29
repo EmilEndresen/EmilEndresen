@@ -5,7 +5,15 @@ const ButtonDivStyled = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 1em;
-  justify-content: center;
+  justify-content: space-around;
+`
+
+const LinkStyled = styled(Link)`
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
 `
 const LogoDivStyled = styled.div`
   display: flex;
@@ -49,15 +57,6 @@ const ProfileImgDesktop = styled.img`
     margin: 4rem auto 4rem auto;
     border-radius: 20px;
   }
-`
-
-const LinkStyled = styled(Link)`
-  font-size: 1.2rem;
-  border: none;
-  background-color: transparent;
-  color: hsl(0, 0%, 100%);
-  text-decoration: none;
-  margin-left: 2em;
 `
 
 const NavButtonStyled = styled.button`

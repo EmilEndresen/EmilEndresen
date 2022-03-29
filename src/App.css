@@ -7,6 +7,10 @@
   --clr-accent: 231, 77%, 90%;
 }
 
+/* -----------------------
+---------RESETS-----------
+------------------------- */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -84,16 +88,30 @@ select {
   }
 }
 
+/* ------------------------------------------------------------- */
+
 body {
   animation: scroll 300s linear infinite;
   /* Photo by <a href="https://unsplash.com/@molior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farouk Mechedal</a> on <a href="https://unsplash.com/s/photos/texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background: url(./images/abstractbg4.jpg), #111111;
+  background: url(./images/abstractbg4.WebP), #111111;
   color: #eee;
   min-width: 320px;
   width: 100%;
+}
 
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin-block: 0.1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(44, 44, 44);
+  border-radius: 100vh;
+  border: 0.06em solid #000;
 }
 
 @keyframes scroll {
@@ -104,7 +122,7 @@ body {
 
 @media (prefers-reduced-motion) {
   .wrapper {
-    animation: scroll 100s linear infinite;
+    animation: scroll 500s linear infinite;
   }
 }
 
@@ -217,7 +235,7 @@ body {
   }
 }
 
-.projects {
+.project-section {
   display: flex;
   flex-direction: column;
   margin-top: 4em;
@@ -226,7 +244,7 @@ body {
   width: 100vw;
 }
 
-.projects > h2 {
+.project-section > h2 {
   margin-inline: auto;
   margin-bottom: 2em;
   font-size: 2rem;
@@ -238,22 +256,31 @@ body {
   display: none;
 }
 
-.project-image {
+.project-images {
   display: flex;
-  max-width: 75%;
+  max-width: 70%;
   margin-block: 1em;
   margin-inline: auto;
+
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 900px) {
-  .projects {
+@media (min-width: 550px) {
+  .project-description {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-right: 6em;
+  }
+
+  .project-section {
     display: flex;
     flex-direction: column;
     margin-inline: auto;
     width: 80vw;
   }
 
-  .projects > h2 {
+  .project-section > h2 {
     margin-top: 2em;
     margin-bottom: 2em;
     font-size: 2.5rem;
@@ -267,16 +294,16 @@ body {
     margin-block: 4em;
   }
 
-  .project-description {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    margin-right: 6em;
-  }
-
   .project-images {
     display: flex;
-    max-width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-images {
+    display: flex;
+    max-width: 600px;
   }
 }
 
@@ -306,7 +333,6 @@ body {
 .github:focus,
 .github:hover {
   color: darkorange;
-  font-size: 1.5rem;
   font-weight: 700;
 }
 
