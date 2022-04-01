@@ -1,12 +1,11 @@
-import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons"
 
-export default function Contact() {
+export default function Footer() {
   return (
-    <div>
+    <footer>
       <div className="contact-area">
         <p className="contact-info contact-email">
           <FontAwesomeIcon icon={faEnvelope} className="info-icon" />
@@ -24,6 +23,6 @@ export default function Contact() {
       <a href="https://www.vecteezy.com/free-vector/modern-background" className="attribution">
         Modern Background Vectors by Vecteezy
       </a>
-    </div>
+    </footer>
   )
 }

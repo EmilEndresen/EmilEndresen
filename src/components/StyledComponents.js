@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-const ButtonDivStyled = styled.div`
+const NavStyled = styled.nav`
   display: flex;
   flex-direction: row;
   margin-top: 1em;
@@ -14,8 +14,13 @@ const LinkStyled = styled(Link)`
   background-color: transparent;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
+
+  :hover,
+  :focus {
+    color: hsl(231, 77%, 80%);
+  }
 `
-const LogoDivStyled = styled.div`
+const LogoSectionStyled = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,12 +72,16 @@ const NavButtonStyled = styled.button`
   background-color: transparent;
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  :hover,
+  :focus {
+    color: hsl(231, 77%, 80%);
+  }
 `
 
 export {
   LinkStyled,
-  ButtonDivStyled,
-  LogoDivStyled,
+  NavStyled,
+  LogoSectionStyled,
   LogoStyled,
   ProfileImgSmallScreen,
   ProfileImgDesktop,

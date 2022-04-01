@@ -1,4 +1,4 @@
-import { ButtonDivStyled, LinkStyled, NavButtonStyled } from "./StyledComponents"
+import { NavStyled, LinkStyled, NavButtonStyled } from "./StyledComponents"
 import { useNavigate } from "react-router-dom"
 
 export default function Nav() {
@@ -7,9 +7,9 @@ export default function Nav() {
     navigate(-1)
   }
   return (
-    <ButtonDivStyled>
+    <NavStyled>
       <NavButtonStyled onClick={handleClick}>&#x25c0;</NavButtonStyled>
       <LinkStyled to="/my-projects">Mine Prosjekter</LinkStyled>
-    </ButtonDivStyled>
+    </NavStyled>
   )
 }

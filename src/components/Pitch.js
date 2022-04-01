@@ -1,41 +1,29 @@
-import portfolioImg from "../images/headshot.WebP"
 import {
-  LogoDivStyled,
-  LogoStyled,
-  ProfileImgSmallScreen,
-  ProfileImgDesktop
-} from "./StyledComponents"
+  PitchTextFirst,
+  PitchTextSecond,
+  Logo,
+  ProfileImgSmall,
+  ProfileImgLarge
+} from "./Pitch/PitchConsts"
+import { LogoSectionStyled } from "./StyledComponents"
 
 export default function Pitch() {
   return (
-    <section>
-      <LogoDivStyled className="logo-area">
-        <LogoStyled>
-          <h1 className="f-name">Emil</h1>
-          <h2 className="l-name">Endresen</h2>
-        </LogoStyled>
+    <div>
+      <LogoSectionStyled className="logo-area">
+        <Logo />
+        <ProfileImgSmall />
+      </LogoSectionStyled>
 
-        <figure>
-          <ProfileImgSmallScreen src={portfolioImg} alt="Emil Endresen" />
-        </figure>
-      </LogoDivStyled>
-
+      <portfolioImgSmall />
       <section className="pitch-area">
-        <figure className="figure-desktop">
-          <ProfileImgDesktop src={portfolioImg} alt="Emil Endresen" />
-        </figure>
+        <ProfileImgLarge />
 
         <div className="pitch-text">
-          <p>
-            Jeg går for tiden på Kodehode hvor jeg lærer om HTML, CSS, Javascript og React, og jeg
-            er alltid på utkikk etter andre språk og rammeverk jeg kan lære meg.
-          </p>
-          <p>
-            Interessen min for data og koding kom fra ung alder da mye av tiden gikk på data og
-            videospill.
-          </p>
+          <p>{PitchTextFirst}</p>
+          <p>{PitchTextSecond}</p>
         </div>
       </section>
-    </section>
+    </div>
   )
 }

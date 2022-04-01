@@ -93,9 +93,9 @@ select {
 body {
   animation: scroll 300s linear infinite;
   /* Photo by <a href="https://unsplash.com/@molior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farouk Mechedal</a> on <a href="https://unsplash.com/s/photos/texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background: url(./images/abstractbg4.WebP), #111111;
+  background: url(../src/components/images/abstractbg4.WebP), #111111;
   color: #eee;
-  min-width: 320px;
+  min-width: 300px;
   width: 100%;
 }
 
@@ -116,7 +116,7 @@ body {
 
 @keyframes scroll {
   100% {
-    background-position: 0px -10000px;
+    background-position: 500px -10000px;
   }
 }
 
@@ -130,7 +130,6 @@ body {
   background-color: hsl(var(--clr-dark));
   color: hsl(var(--clr-white));
   font-family: "Orbitron", sans-serif;
-  min-width: 375px;
   letter-spacing: 0.09rem;
 }
 
@@ -261,7 +260,7 @@ body {
   max-width: 70%;
   margin-block: 1em;
   margin-inline: auto;
-
+  border-radius: 5px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 

@@ -1,17 +1,16 @@
 import React from "react"
-import steakhouse from "../images/steakhouse.WebP"
-import travelJournal from "../images/travel-journal.WebP"
-import blackjack from "../images/blackjack.WebP"
+import steakhouse from "./images/steakhouse.WebP"
+import travelJournal from "./images/travel-journal.WebP"
+import blackjack from "./images/blackjack.WebP"
+import { ProjectTextOne } from "./Projects/ProjectConsts"
 
 export default function Projects() {
   return (
     <section className="project-section">
       <h2>Mine Prosjekter</h2>
       <div className="project">
-        <p className="project-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam. Lorem ipsum dolor sit
-          amet.
-        </p>
+        <p className="project-description">{ProjectTextOne}</p>
+
         <a href="https://github.com/EmilEndresen/Restaurant" className="project-image">
           <img src={steakhouse} alt="project" className="project-images" />
         </a>
