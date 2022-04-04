@@ -3,7 +3,9 @@ import {
   PitchTextSecond,
   Logo,
   ProfileImgSmall,
-  ProfileImgLarge
+  ProfileImgLarge,
+  PitchTextThird,
+  PitchTextFourth,
 } from "./Pitch/PitchConsts"
 import { LogoSectionStyled } from "./StyledComponents"
 
@@ -22,6 +24,8 @@ export default function Pitch() {
         <div className="pitch-text">
           <p>{PitchTextFirst}</p>
           <p>{PitchTextSecond}</p>
+          <p>{PitchTextThird}</p>
+          <p>{PitchTextFourth}</p>
         </div>
       </section>
     </div>

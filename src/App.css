@@ -253,6 +253,7 @@ body {
 
 .project-description {
   display: none;
+  text-align: left;
 }
 
 .project-images {
@@ -268,8 +269,9 @@ body {
   .project-description {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 50%;
     margin-right: 6em;
+    margin-left: auto;
   }
 
   .project-section {
@@ -293,6 +295,10 @@ body {
     margin-block: 4em;
   }
 
+  .project-image {
+    margin-right: auto;
+  }
+
   .project-images {
     display: flex;
     max-width: 300px;
@@ -301,9 +307,20 @@ body {
 
 @media (min-width: 900px) {
   .project-images {
-    display: flex;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .project-description {
+    width: 30%;
+  }
+
+  .project-images {
     max-width: 600px;
   }
+
+
 }
 
 .contact-area {
@@ -369,6 +386,13 @@ body {
     margin-inline: auto;
     padding: 0;
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1080px) {
+
+  .pitch-text { 
+    width: 40%;
   }
 }
 

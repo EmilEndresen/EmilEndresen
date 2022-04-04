@@ -2,12 +2,18 @@ import { LogoStyled, ProfileImgSmallScreen, ProfileImgDesktop } from "../StyledC
 import portfolioImg from "../images/headshot.WebP"
 
 export const PitchTextFirst = `
-            Jeg går for tiden på Kodehode hvor jeg lærer om HTML, CSS, Javascript og React, og jeg
-            er alltid på utkikk etter andre språk og rammeverk jeg kan lære meg.`
+            Jeg går for tiden på kurset Kodehode hvor jeg hvirkelig har fått interessen for frontend ved bruk av HTML, CSS, Javascript, figma og REACT.`
 
 export const PitchTextSecond = `
-            Interessen min for data og koding kom fra ung alder da mye av tiden gikk på data og
-            videospill.
+            I arbeidslivet har jeg i hovedsak jobbet innen salg og service hvor jeg har fått mye god kunnskap, men jeg har hele tiden sett etter noe som passet bedre for meg og mine interesser, dette har jeg funnet gjennom kurset Kodehode og front-end utvikling.
+`
+
+export const PitchTextThird = `
+            Det jeg liker best med front-end utvikling er at det alltid er noe nytt å lære og noe nytt å lage.
+`
+
+export const PitchTextFourth = `
+            På fritiden liker jeg å være med min samboer, kode, spille dataspill, og å være med venner.
 `
 
 export const Logo = () => {

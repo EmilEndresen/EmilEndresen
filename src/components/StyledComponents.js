@@ -62,6 +62,10 @@ const ProfileImgDesktop = styled.img`
     margin: 4rem auto 4rem auto;
     border-radius: 20px;
   }
+
+  @media (min-width: 1080px) {
+    max-width: 50%;
+  }
 `
 
 const NavButtonStyled = styled.button`

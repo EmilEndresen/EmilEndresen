@@ -21,7 +21,7 @@ export default function Footer() {
         </a>
       </div>
       <a href="https://www.vecteezy.com/free-vector/modern-background" className="attribution">
-        Modern Background Vectors by Vecteezy
+        Modern Background Vectors by Vecteezy.
       </a>
     </footer>
   )
