@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EmilEndresen/static/css/main.5869361d.css",
-    "main.js": "/EmilEndresen/static/js/main.253d7c10.js",
+    "main.css": "/EmilEndresen/static/css/main.6f4bd6ef.css",
+    "main.js": "/EmilEndresen/static/js/main.ec712a07.js",
     "static/js/787.80cc74ea.chunk.js": "/EmilEndresen/static/js/787.80cc74ea.chunk.js",
     "static/media/headshot.WebP": "/EmilEndresen/static/media/headshot.496569aea64de3b07376.WebP",
     "static/media/abstractbg4.WebP": "/EmilEndresen/static/media/abstractbg4.e6c7d913ac711b18762f.WebP",
@@ -9,12 +9,12 @@
     "static/media/blackjack.WebP": "/EmilEndresen/static/media/blackjack.d480cb61fda18e01abee.WebP",
     "static/media/steakhouse.WebP": "/EmilEndresen/static/media/steakhouse.664b3704b62598d35f3f.WebP",
     "index.html": "/EmilEndresen/index.html",
-    "main.5869361d.css.map": "/EmilEndresen/static/css/main.5869361d.css.map",
-    "main.253d7c10.js.map": "/EmilEndresen/static/js/main.253d7c10.js.map",
+    "main.6f4bd6ef.css.map": "/EmilEndresen/static/css/main.6f4bd6ef.css.map",
+    "main.ec712a07.js.map": "/EmilEndresen/static/js/main.ec712a07.js.map",
     "787.80cc74ea.chunk.js.map": "/EmilEndresen/static/js/787.80cc74ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5869361d.css",
-    "static/js/main.253d7c10.js"
+    "static/css/main.6f4bd6ef.css",
+    "static/js/main.ec712a07.js"
   ]
 }
